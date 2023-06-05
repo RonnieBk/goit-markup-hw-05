@@ -51,7 +51,9 @@
           EFEKTYWNE ROZWIĄZANIA<br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button type="button" class="button">Zamów usługę</button>
+        <button type="button" class="button" data-modal-open>
+          Zamów usługę
+        </button>
       </div>
       <div class="introduction container">
         <ul class="introduction-text list">
@@ -109,29 +111,32 @@
         <div class="container">
           <h2 class="headline">Czym się zajmujemy</h2>
           <ul class="services list">
-            <li>
+            <li class="service one">
               <img
                 src="images/img1.jpg"
                 alt="praca na komputerze"
                 width="370"
                 height="294"
               />
+              <p class="label">Aplikacje komputerowe</p>
             </li>
-            <li>
+            <li class="service two">
               <img
                 src="images/img2.jpg"
                 alt="praca na telefonie"
                 width="370"
                 height="294"
               />
+              <p class="label">Aplikacje mobilne</p>
             </li>
-            <li>
+            <li class="service three">
               <img
                 src="images/img3.jpg"
                 alt="praca na tablecie"
                 width="370"
                 height="294"
               />
+              <p class="label">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
@@ -366,5 +371,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
