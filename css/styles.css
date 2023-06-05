@@ -62,6 +62,7 @@ footer a.logo {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-links a:hover,
@@ -133,6 +134,11 @@ header .icon {
   fill: var(--secondary-color);
   margin-right: 10px;
   line-height: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header .contacts a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header .contacts a:hover .icon,
@@ -164,6 +170,9 @@ header .contacts a:focus .icon {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:focus,
 .button:hover {
@@ -289,6 +298,7 @@ p {
 }
 
 .pictures.list li {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 15px;
 }
 
@@ -433,6 +443,8 @@ figure img {
   padding: 12px;
   border-radius: 50%;
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-icons li:hover,
@@ -448,6 +460,8 @@ figure img {
   width: 170px;
   fill: #afb1b8;
   padding: 16px 32px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logos.list .icon {
@@ -476,6 +490,7 @@ figure img {
 .address > .contact {
   display: block;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address > .phone-number {
   text-decoration: none;
