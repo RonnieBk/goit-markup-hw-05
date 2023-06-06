@@ -562,6 +562,9 @@ footer .social-media-icons.list {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -590,11 +593,9 @@ footer .social-media-icons.list {
   cursor: pointer;
 }
 
-@keyframes ModalWindowOpen {
-}
-
 .is-hidden {
   visibility: hidden;
   opacity: 0;
+  transform: scale(1);
   pointer-events: none;
 }
